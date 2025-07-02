@@ -1,0 +1,90 @@
+
+
+
+*{
+    margin:0;
+    padding:0;
+  
+}
+nav{
+    background-color:white;
+    color: white;
+    padding: 10px;
+    
+   
+}
+ul{
+    
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+nav ul li{
+   list-style-type: none;
+    display: inline-block;
+    padding:10px 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(6, 2, 2);
+    
+}
+a:hover{
+    color:rgb(138, 128, 209)
+}
+.header span{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.hero h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    color: rgb(6, 2, 2);
+}
+.hero h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: rgb(31, 18, 18);
+}
+ .header{
+    font-weight: 400;
+    font-size:2.5rem ;
+    padding:20px;
+ }
+ .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+   
+    padding: 10px;
+    height:100vh;
+ }
+ .griditem{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin:20%;
+  
+ }
+ img{
+    width:300px;
+    height:300px;
+   
+ }
+ .header p{
+    font-size: 2rem;
+ }
+ p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+ }
+ select{
+    width:400px;
+    height:30px;
+    
+ }
