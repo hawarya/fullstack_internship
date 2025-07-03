@@ -1,0 +1,73 @@
+body{
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 5%;
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+   font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+.between{
+    margin-left: 80%;
+}
+.btn-again,.btn-check{
+   margin-top: 10px;
+   height: 50px;
+   width: 80px;
+   font-size: 1.2em;
+   font-weight:600;
+  
+}
+.btn-again:hover,.btn-check:hover{
+    background-color: white;
+    color: #000000;
+    
+}
+.number h1{
+    text-align: center;
+    line-height: 80px;
+    font-size: 3em;
+    border:3px solid #ffffff;
+    width: 100px;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+main{
+    display: flex;
+}
+.left{
+   flex: 1;
+}
+.right{
+    flex: -2;
+    font-size: 1.9em;
+    font-family: 'Courier New', Courier, monospace;
+}
+#guess-input{
+  height: 50px;
+  width: 200px;
+  border: 5px solid white;
+  background-color: black;
+    color: white;
+    width:150px;
+    padding:20px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.right .message{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+}
+.right .score, .right .highscore{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+padding:10px;
+
+}
