@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #de89bb, #f341a3); /* Updated gradient */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  width: 80%;
+  max-width: 900px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.player {
+  flex: 1;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.player--winner {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #fff;
+}
+
+.score {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color:  #f9ca24;
+}
+
+.current {
+  background-color: #f9ca24;
+  color: #000;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.current-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.current-score {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.dice {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  display: none;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffdd59;
+  color: #000;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.btn--new {
+  top: 10px;
+}
+
+.btn--roll {
+  top: 65%;
+}
+
+.btn--hold {
+  top: 75%;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .btn--roll {
+    top: 80%;
+  }
+
+  .btn--hold {
+    top: 88%;
+  }
+
+  .dice {
+    top: 60%;
+  }
+}
